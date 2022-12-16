@@ -1,0 +1,552 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+
+}
+body{
+    background-color:  #18191A;
+}
+#main{
+    min-height: 98vh;
+    width: 100%;
+    background-image: linear-gradient(#c3b19d,#a69686,#5f5954,#343536,#242526);
+    position: relative;
+    
+}
+/* CSS Phần Header */
+.header{
+    display: flex;
+    width: 100%;
+    background-color: #242526;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.header__content{
+    width: 98%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.header__logosearchdiv{
+    flex: 1;
+}
+.header__logoseacrh{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+}
+.header__logoseacrh img{
+   height: 40px;
+   cursor: pointer;
+
+}
+
+.header__logoseacrh i{
+    margin-left: -250px ;
+    font-size: 14px;
+    margin-right: 12px;
+    color: rgb(138, 138, 138);
+    cursor: text;
+    
+}
+.header__logoseacrh input{
+    width: 220px;
+    line-height: 24px;
+    padding: 8px ;
+    padding-left: 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #333;
+    outline: none;
+}
+
+.header__nav {
+   display: flex;
+   justify-content: space-between;
+   flex: 2;
+}
+.header__nav1 li{
+    display: inline-block;
+    list-style-type: none;  
+    font-size: 20px;
+    line-height: 50px;
+    padding: 0 44px;
+    color: rgba(255,255,255,0.6);
+    cursor:pointer
+
+}
+.header__nav1 li:hover{
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+.header__nav2{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header__nav2 i {
+    display: inline-block;
+    list-style-type: none;  
+    text-align: center;
+    font-size: 16px;
+    width: 40px;
+    line-height: 40px;
+    color: #ccc;
+    cursor:pointer;
+    background-color: #333;
+    border-radius: 50%;
+    
+}
+
+
+.header__nav2 i:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+
+.header__nav2 img{
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* Css phần ảnh Bìa */
+.banner{
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:  -150px;
+    cursor: pointer;
+}
+.banner__imgdiv{
+    position: relative;
+}
+.banner img{
+    width: 1100px;
+    height: 616px;
+    object-fit: cover;
+    border-radius: 5px;
+    filter: brightness(0.9);
+    z-index: 0;
+}
+.banner__divajust{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(0deg, rgba(56, 56, 56, 0.342),transparent);
+}
+.banner__ajust{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: #fff;
+    height: 24px;
+    padding: 6px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+.banner__ajust:hover{
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+.banner__ajust i{
+    font-size: 18px ;
+    width: 26px;
+}
+.banner__ajust span{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    
+}
+/* Profile */
+.content{
+    width: 1030px;
+    height: 146px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    
+}
+.content__avt{
+    display: inline-block;
+    border-radius: 50%;
+    width: 168px;
+    z-index: 0;
+    position: relative;
+   margin-top: -12px;
+   margin-right: 18px;
+}
+
+.content__avt img{
+    border-radius: 50%;
+    width: 168px;
+    height: 168px;
+    object-fit: cover;
+    margin-top: -20px;
+    overflow: hidden;
+     border: 4px solid #242526;
+}
+.content__avt:hover{
+    filter: brightness(1.05);
+    opacity: 009;
+    cursor: pointer;
+}
+.content__avt__ajust{
+    width: 36px;
+    height: 36px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.content__avt__ajust:hover{
+    opacity: 0.96;
+    background-color: #525252;
+}
+.content__avt i{
+    font-size: 20px;
+    color: #ddd;
+    text-align: center;
+    
+}
+
+
+.content__info{
+    margin-top: 12px;
+}
+.content__info h1{
+    color: #E4E6EB;
+    margin: 0;
+    padding: 0;
+}
+.content__info__numberfriend{
+    padding-top: 8px;
+    color: #B0B3B8;
+    font-weight: 600;
+}
+.content__info__avtfriend{
+    margin: 0;
+    padding-top: 14px;
+}
+.info__avtfriend__avatar {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 32px;
+    cursor: pointer;
+  }
+  
+  .info__avtfriend__avatar img {
+    width: 100%;
+    height: 32px;
+    object-fit: cover;
+    display: block;
+  }
+  .info__avtfriend__avatar:not(:first-child) {
+    margin-left: -8px;
+    -webkit-mask: radial-gradient(circle 16px at -10px 50%,transparent 99%,#fff 100%);
+    mask:radial-gradient(circle 16px at -10px 50%,transparent 99%,#fff 100%);
+  }
+.info__avtfriend__avatar:last-child{
+    position: relative;
+  }
+.info__avtfriend__avatar:last-child::after{
+    content: '...';
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #ccc;
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    border-radius: 50%;
+    background-color:rgba(0,0,0,0.4);
+}
+/* Them story  - chinh sua trang ca nhan */
+.content__add-edit{
+    position: absolute;
+    width: 380px;
+    display: flex;
+    justify-content: space-around;
+    bottom: 20%;
+    right: 0px;
+    
+}
+.content__add-edit__addstory{
+    display: flex;
+    align-items: center;
+    width: 134px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #1e72de;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.add-edit__addstory__div{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.content__add-edit__addstory i{
+    font-size: 12px;
+    text-align: center;
+    color: #1e72de;
+}
+.content__add-edit__addstory span{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 6px;
+    display:   inline-block;
+}
+
+.content__add-edit__editprofile{
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    color: #ddd;
+    font-weight: 600;
+    background-color: #333;
+    border-radius: 5px;
+}
+.content__add-edit__editprofile i{
+    margin-right: 8px;
+}
+.content__add-edit:hover , .content__add-edit__editprofile:hover{
+    opacity: 0.96;
+    cursor: pointer;
+}
+/* Navigation page */
+.nav-page{
+    width: 1030px;
+    border-top: 0.5px solid rgba(255,255,255,0.2);
+    margin: 16px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.nav-page__option{
+    display: inline-block;
+    line-height: 52px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #B0B3B8;
+    padding: 0 16px;
+}
+.nav-page__option:first-child{
+    color: #187cff;
+    border-bottom: 3px solid #187cff;
+    cursor: pointer;
+}
+.nav-page__option:nth-child(7){
+    position: relative;
+}
+.nav-page__option:nth-child(7):after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    width: 0;
+    height: 0;
+    border-radius: 5px;
+    border-top: 7px solid #B0B3B8;
+    border-left: 6px solid  transparent;
+    border-right: 6px solid  transparent;
+}
+
+.nav-page__option:last-child{
+    position: absolute;
+    display: flex;
+    height: 36px;
+    align-items: center;
+    right: 0;
+    background-color: rgba(84, 84, 84, 0.2);
+    border-radius: 5px;
+}
+.nav-page__option:last-child span{
+    line-height: 10px;
+    margin-top: -10px;
+}
+.nav-page__option:hover:not(:first-child){
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Message */
+.msg-tooltip{
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.msg__more-option{
+    position: absolute;
+    left: 2px;
+    top: -40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #404040;
+    cursor: pointer;
+    border-radius: 50%;
+   
+}
+.msg-tooltip__message{
+    position: relative;
+}
+.msg__more-option span{
+    font-weight: 800;
+    color: #ddd;
+    line-height: 30px;
+}
+/* Tin nhắn rút gọn -> avt */
+.msg-tooltip__message__close{
+    background-color: #2f2f2f;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    z-index: 1;
+    cursor: pointer;
+}
+.msg-tooltip__message__close i{
+    color: #fff;
+    font-size: 10px;
+    margin-bottom: -2px;
+    
+}
+.msg__avt-message img{
+    width: 48px;
+    height: 48px;
+    position: relative;
+    object-fit: cover;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+.msg-tooltip:hover .msg__more-option{
+    
+    visibility: visible;
+    scale: 1;
+}
+.msg__avt-message__text{
+    position: absolute;
+    display: inline-block;
+    left: -110px;
+    top: -10px;
+    background-color: #242526;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 2px 10px #000;
+    border-radius: 8px;
+    
+}
+.msg__avt-message__text::after{
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    right: -11px;
+    width: 0;
+    height: 0;
+    border-radius: 8px;
+    border-left: 12px solid #242526;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+
+}
+.msg-tooltip__message:hover .msg-tooltip__message__close{
+    visibility: visible;
+    scale: 1;
+}
+.msg-tooltip__message:hover .msg__avt-message__text{
+    visibility: visible;
+    opacity: 1;
+}
+.text__name{
+    color: #ddd;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 12px;
+    
+}
+.text__name i{
+    color: red;
+}
+.text__message{
+    color: #b1b1b1;
+    font-size: 14px;
+}
+.msg__more-option,.msg-tooltip__message__close{
+    visibility: hidden;
+    scale: 0;
+    transition: 0.05s ease;
+}
+.msg__avt-message__text{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+/* Icon new messgae */
+.msg__new-message{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #595959;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.msg__new-message i{
+    color: #ddd;
+    font-size: 20px;
+}
+.msg-tooltip-div:not(:first-child){
+    margin-top: 8px;
+}
